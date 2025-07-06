@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 8000;
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://127.0.0.1:5173','https://adwise-backend-5q0u.onrender.com'],
+  origin: ['http://localhost:5173', 'http://127.0.0.1:5173','https://adwise-backend-5q0u.onrender.com','https://adwise-fro.onrender.com/'],
   credentials: true
 }));
 
