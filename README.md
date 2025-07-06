@@ -1,4 +1,4 @@
-# Persona-Based Ad A/B Testing Application
+# ADWise: Persona based Ad A/B testing
 
 A full-stack web application that uses AI to generate detailed user personas and evaluate ad performance through comprehensive A/B testing analysis across different media types.
 
