@@ -6,34 +6,7 @@ A full-stack web application that uses AI to generate detailed user personas and
 
 This application aims to provide marketers and advertisers with an AI-powered tool to test the effectiveness of their ad creatives against specific target personas. By generating detailed user personas and evaluating image, video, and text ads based on a streamlined set of criteria, the tool helps identify the most impactful ad for a given audience, optimizing campaign performance and reducing guesswork.
 
-## Process Flow Diagram
 
-```mermaid
-graph TD
-    A[User provides Persona Prompt] --> B{Select Ad Type};
-    B -- Image --> C[Upload Ad A Image & Ad B Image];
-    B -- Video --> D[Upload Ad A Video & Ad B Video];
-    B -- Text --> E[Input Ad A Text & Ad B Text];
-
-    C --> F[Frontend sends data to Backend];
-    D --> F;
-    E --> F;
-
-    F --> G{Backend: Validate Inputs};
-    G -- Valid --> H[Backend: Generate Persona (AI)];
-    H --> I{Backend: Evaluate Ads (AI)};
-    I -- Image Ads --> J[AI analyzes images];
-    I -- Video Ads --> K[AI video descriptions];
-    I -- Text Ads --> L[AI analyzes text copy];
-
-    J --> M[Backend: Compile Evaluation Results];
-    K --> M;
-    L --> M;
-
-    M --> N[Backend sends Results to Frontend];
-    N --> O[Frontend: Display Persona & Evaluation Results];
-    O --> P[User reviews Scores, Winner & Explanation];
-```
 
 ## Module Descriptions
 
