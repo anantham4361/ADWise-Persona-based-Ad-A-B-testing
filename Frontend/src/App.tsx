@@ -104,17 +104,17 @@ function App() {
 
       switch (adType) {
         case 'image':
-          endpoint = `${import.meta.env.VITE_API_URL}/evaluate-ads`;
+          endpoint = `https://adwise-backend-5q0u.onrender.com/evaluate-ads`;
           formData.append('ad_a', adImageA!);
           formData.append('ad_b', adImageB!);
           break;
         case 'video':
-          endpoint = `${import.meta.env.VITE_API_URL}/evaluate-video-ads`;
+          endpoint = `https://adwise-backend-5q0u.onrender.com/evaluate-video-ads`;
           formData.append('ad_a', adVideoA!);
           formData.append('ad_b', adVideoB!);
           break;
         case 'text':
-          endpoint = `${import.meta.env.VITE_API_URL}/evaluate-text-ads`;
+          endpoint = `$https://adwise-backend-5q0u.onrender.com/evaluate-text-ads`;
           formData.append('ad_a_text', adTextA);
           formData.append('ad_b_text', adTextB);
           break;
