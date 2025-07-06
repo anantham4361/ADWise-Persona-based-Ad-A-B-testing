@@ -114,7 +114,7 @@ function App() {
           formData.append('ad_b', adVideoB!);
           break;
         case 'text':
-          endpoint = `$https://adwise-backend-5q0u.onrender.com/evaluate-text-ads`;
+          endpoint = `https://adwise-backend-5q0u.onrender.com/evaluate-text-ads`;
           formData.append('ad_a_text', adTextA);
           formData.append('ad_b_text', adTextB);
           break;
