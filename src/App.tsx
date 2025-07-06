@@ -104,17 +104,17 @@ function App() {
 
       switch (adType) {
         case 'image':
-          endpoint = 'http://localhost:8000/evaluate-ads';
+          endpoint = `${import.meta.env.VITE_API_URL}/evaluate-ads`;
           formData.append('ad_a', adImageA!);
           formData.append('ad_b', adImageB!);
           break;
         case 'video':
-          endpoint = 'http://localhost:8000/evaluate-video-ads';
+          endpoint = `${import.meta.env.VITE_API_URL}/evaluate-video-ads`;
           formData.append('ad_a', adVideoA!);
           formData.append('ad_b', adVideoB!);
           break;
         case 'text':
-          endpoint = 'http://localhost:8000/evaluate-text-ads';
+          endpoint = `${import.meta.env.VITE_API_URL}/evaluate-text-ads`;
           formData.append('ad_a_text', adTextA);
           formData.append('ad_b_text', adTextB);
           break;
